@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center">
+    <form action="" class="w-1/2 ml-0 md:ml-8 mt-8">
+        <h1 class="text-3xl">Iniciar sesión</h1>
+        <div class="w-full pt-2">
+            <p class="block pb-2">Usuario</p>
+            <input id="usuario" class="border border-black p-1 w-full" placeholder="Nombre" type="text">
+        </div>
+        <div class="w-full pt-2">
+            <p class="block pb-2">Clave</p>
+            <input id="clave" placeholder="Contraseña" class="border border-black p-1 w-full" type="password">
+        </div>
+        <input onclick="validar()" class="bg-red-500 w-20 text-center text-white mt-2" type="text" value="Entrar">
+    </form>
+    <script src="guardar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOWDOWN</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="w-4/5 mx-auto py-4">
+        <img src="image/logo.PNG" width="200px">
+        <div class="w-full pt-8 md:flex">
+          <div class="grid gap-8 grid-cols-4 w-full md:w-2/3">
+            <img src="image/1.png" alt="">
+            <img src="image/2.png" alt="">
+            <img src="image/3.png" alt="">
+            <img src="image/4.png" alt="">
+            <img src="image/5.png" alt="">
+            <img src="image/6.png" alt="">
+            <img src="image/7.png" alt="">
+            <img src="image/8.png" alt="">
+            <img src="image/9.png" alt="">
+            <img src="image/10.png" alt="">
+            <img src="image/11.png" alt="">
+            <img src="image/12.png" alt="">
+            <img src="image/13.png" alt="">
+          </div>
+          <div class="w-full md:w-1/3">
+            <table class="border border-black w-full ml-0 md:ml-8 mt-4 md:mt-0">
+              <thead class="border border-black bg-red-300 text-center">
+                <tr>
+                  <th class="border border-black p-2">#</th>
+                  <th class="border border-black p-2">Carta</th>
+                </tr>
+              </thead>
+              <tbody id="tbody" class="border border-black text-center">
+                
+              </tbody>
+            </table>
+            <form action="" class="w-full ml-0 md:ml-8 mt-8">
+              <h1 class="text-3xl">Registro de cartas</h1>
+              <div class="w-full pt-2">
+                <p class="block pb-2">Número</p>
+                <input id="numero" class="border border-black p-1 w-full" placeholder="Ingrese el número" type="text">
+                <p class="text-sm">Debe ingresar un numero del 1 al 13</p>
+              </div>
+              <div class="w-full pt-2">
+                <p class="block pb-2">Carta</p>
+                <input id="carta" class="border border-black p-1 w-full" placeholder="Descripción" type="text">
+              </div>
+              <input onclick="guardar()" class="bg-red-500 w-20 text-center text-white mt-2" type="text" value="Guardar">
+            </form>
+          </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="guardar.js"></script>
+</body>
+</html>
